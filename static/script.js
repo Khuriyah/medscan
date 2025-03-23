@@ -21,7 +21,7 @@ function checkSymptom() {
         return;
     }
     
-    fetch("/api/check", {
+    fetch("api/check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ gejala: gejala })
