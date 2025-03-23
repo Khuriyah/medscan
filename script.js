@@ -21,7 +21,7 @@ function checkSymptom() {
         return;
     }
     
-    fetch("/api/check", {
+    fetch("medscan/api/check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ gejala: gejala })
